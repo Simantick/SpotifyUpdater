@@ -3,11 +3,13 @@
 #include <Lmcons.h>
 #include <fstream>
 #pragma warning(disable: 4996)
+#pragma comment(lib,"shell32.lib")
 
 using namespace std;
 
 class Spicetify {
 public:
+	~Spicetify();
 	void SetP() {
 		PowCom = "@echo off\n";
 		PowCom += "echo Installing Spicetify...\n";
@@ -18,6 +20,11 @@ public:
 		return PowCom;
 	}
 	void StartSpotify() {
+		STARTUPINFO si;
+		PROCESS_INFORMATION pi;
+		RtlZeroMemory(&si, sizeof(si));
+		si.cb = sizeof(si);
+		RtlZeroMemory(&pi, sizeof(pi));
 		appdata = getenv("APPDATA");
 		command1 = appdata;
 		command1 += "\\Spotify\\spotify.exe";
@@ -25,6 +32,7 @@ public:
 		MultiByteToWideChar(CP_ACP, 0, command1.c_str(), -1, wString ,4096);
 		cout << wString << endl;
 		ShellExecute(NULL, L"open", wString, L"", L"C:\\", SW_NORMAL);
+		//CreateProcess(wString, L"Usage: %s [cmdline]\n", NULL,NULL, FALSE, 0, NULL,NULL, &si, &pi);
 	}
 private:
 	string PowCom,command1, command2;
@@ -32,6 +40,9 @@ private:
 	wchar_t* wString;
 };
 
+Spicetify::~Spicetify() {
+	delete[]wString;
+}
 int main(){
 	Spicetify Sp;
 	ofstream file;
@@ -42,5 +53,5 @@ int main(){
 	Sp.StartSpotify();
 	system("Updater.bat");
 	remove("Updater.bat");
+	return 0;
 }
-
