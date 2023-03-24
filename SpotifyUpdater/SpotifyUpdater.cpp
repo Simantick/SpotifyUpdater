@@ -32,7 +32,6 @@ public:
 		MultiByteToWideChar(CP_ACP, 0, command1.c_str(), -1, wString ,4096);
 		cout << wString << endl;
 		ShellExecute(NULL, L"open", wString, L"", L"C:\\", SW_NORMAL);
-		//CreateProcess(wString, L"Usage: %s [cmdline]\n", NULL,NULL, FALSE, 0, NULL,NULL, &si, &pi);
 	}
 private:
 	string PowCom,command1, command2;

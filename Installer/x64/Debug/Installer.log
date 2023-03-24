@@ -1,3 +1,3 @@
-﻿  SpotifyUpdater.cpp
+﻿  MainForm.cpp
   SpotifyUpdater.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   Installer.vcxproj -> C:\Users\maxim\source\repos\SpotifyUpdater\x64\Debug\Installer.exe

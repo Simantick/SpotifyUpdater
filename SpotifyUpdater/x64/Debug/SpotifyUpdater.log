@@ -1,4 +1,2 @@
 ﻿  SpotifyUpdater.cpp
-C:\Users\maxim\source\repos\SpotifyUpdater\SpotifyUpdater\SpotifyUpdater.cpp(34,1): error C2664: "BOOL CreateProcessW(LPCWSTR,LPWSTR,LPSECURITY_ATTRIBUTES,LPSECURITY_ATTRIBUTES,BOOL,DWORD,LPVOID,LPCWSTR,LPSTARTUPINFOW,LPPROCESS_INFORMATION)": невозможно преобразовать аргумент 2 из "const wchar_t [21]" в "LPWSTR"
-C:\Users\maxim\source\repos\SpotifyUpdater\SpotifyUpdater\SpotifyUpdater.cpp(34,26): message : При преобразовании из строкового литерала теряется квалификатор (см. /Zc:strictStrings)
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\processthreadsapi.h(385,1): message : см. объявление "CreateProcessW"
+  SpotifyUpdater.vcxproj -> C:\Users\maxim\source\repos\SpotifyUpdater\x64\Debug\SpotifyUpdater.exe

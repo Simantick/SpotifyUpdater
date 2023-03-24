@@ -1,4 +1,4 @@
 C:\Users\maxim\source\repos\SpotifyUpdater\Installer\x64\Debug\Installer.vcxproj.AssemblyReference.cache
 C:\Users\maxim\source\repos\SpotifyUpdater\Installer\x64\Debug\Installer.vcxproj.SuggestedBindingRedirects.cache
-C:\Users\maxim\source\repos\SpotifyUpdater\Installer\x64\Debug\Installer.MainForm.resources
 C:\Users\maxim\source\repos\SpotifyUpdater\Installer\x64\Debug\Installer.vcxproj.GenerateResource.cache
+C:\Users\maxim\source\repos\SpotifyUpdater\Installer\x64\Debug\Installer.MainForm.resources
